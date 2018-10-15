@@ -1,0 +1,14 @@
+extends layout
+
+block content
+    h1= 'Welcome'
+
+    div
+        form(action='/', method='post', enctype='multipart/form-data')
+
+            div.form-group
+                label(for='file') File:
+                input#file.form-control(type='file', name='file')
+
+            div(data-role='fieldcontain')
+                input(type='submit', value='Submit')
